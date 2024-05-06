@@ -12,3 +12,6 @@ In this project, we will utilize a palette of hardware components. Our main goal
 | Power Supply Socket  | Provides a connection point for the power adapter to deliver electricity to the device or circuit.  | 
 | 3V3 Voltage Regulator  | Ensures a stable 3.3-volt output from a higher input voltage source, typically used to power low-voltage electronic components or microcontrollers.  | 
 | Buzzer  | Emits audible alerts or signals in electronic circuits or devices  | 
+
+![RFID-BalanceKeeper_Schaltplan](https://github.com/CaTaNa52/RFID-BalanceKeeper/assets/168989951/484437ee-b0a8-4ddd-a52b-3a58db619d34)
+
