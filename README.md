@@ -4,6 +4,7 @@ RFID-BalanceKeeper is an hobby project for managing balances on RFID cards. This
 ## Maintainer
 @Habib Kilic: <<habibkilic@hotmail.de>> \
 @Yusuf Türkyilmaz <<yusuf_tuerkyilmaz@hotmail.de>>
+@Bilal Aydemir <<>>
 
 ## Main Features:
 * Load Credit onto an RFID card (in Progress)
