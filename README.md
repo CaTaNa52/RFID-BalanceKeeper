@@ -1,4 +1,4 @@
-# RFID-BalanceKeeper
+# ![RFID-BalanceKeeper_Schaltplan](./Documentation/images/RFID-BalanceKeeper_Schaltplan.jpg) RFID-BalanceKeeper
 RFID-BalanceKeeper is an project for managing balances on RFID cards. This project provides a simple and effective way to use RFID cards to load funds with money and pay at designated locations.
 
 ## Maintainer
