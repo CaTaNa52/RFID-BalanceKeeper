@@ -2,9 +2,9 @@
 RFID-BalanceKeeper is an project for managing balances on RFID cards. This project provides a simple and effective way to use RFID cards to load funds with money and pay at designated locations.
 
 ## Maintainer
-@Habib Kilic: <<habibkilic@hotmail.de>> \
-@Yusuf Türkyilmaz <<yusuf_tuerkyilmaz@hotmail.de>> \
-@Bilal Aydemir <<bilalaydemir@outlook.de>>
+**[Habib Kilic](https://github.com/CaTaNa52)** - habibkilic@hotmail.de \
+**[Yusuf Türkyilmaz](https://github.com/Yusuf-Tuerkyilmaz)** - yusuf_tuerkyilmaz@hotmail.de \
+**[Bilal Aydemir](https://github.com/bayd16)** - bilalaydemir@outlook.de
 
 ## Main Features:
 * Load Credit onto an RFID card (in Progress)
