@@ -66,7 +66,7 @@ List of hardware components -> [Click here](https://github.com/CaTaNa52/RFID-Bal
 
 ## Installation
 Step-by-step guide for installing the project and all necessary components. \
-// TODO
+[Building instructions](./building%20instructions)
 
 ## Configuration
 Instructions for configuring the project and its components. \
