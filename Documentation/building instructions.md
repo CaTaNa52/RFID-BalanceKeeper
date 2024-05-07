@@ -20,15 +20,15 @@ When building the components, handle with extreme care. Components are very sens
 ---
 ### Chip-Layout
 Example: \
-<img src="image.png" alt="alt text" width="400" height="300">
+<img src="./images/image.png" alt="alt text" width="400" height="300">
 
 ### Circuit board
 This section provides a step-by-step explanation of how to assemble the recording board. 
 
 Example: \
-<img src="image-1.png" alt="alt text" width="400" height="500">
+<img src="./images/image-1.png" alt="alt text" width="400" height="500">
 
 ### Terminal
 
 Example: \
-<img src="image-2.png" alt="alt text" width="300" height="500">
+<img src="./images/image-2.png" alt="alt text" width="300" height="500">
