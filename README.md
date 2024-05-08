@@ -26,4 +26,4 @@ RFID-BalanceKeeper is an project for managing balances on RFID cards. This proje
 [Click for Version History](/workspaces/RFID-BalanceKeeper/Documentation/images/Hardware_design_history)
 
 Version 2.0 \
-![RFID-BalanceKeeper_mockup_v2](./Documentation/images/Harware_design_history/RFID-BalanceKeeper_mockup_v2.drawio.png)
+![RFID-BalanceKeeper_mockup_v2](./Documentation/images/Hardware_design_history/RFID-BalanceKeeper_mockup_v2.drawio.png)
