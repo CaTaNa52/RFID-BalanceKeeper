@@ -18,5 +18,7 @@ In this project, we will utilize a palette of hardware components. Our main goal
 </br></br>
 
 ## Schematic Version 1
+PDF Version: [PDF](Schematic_RFIDBalanceKeeper_2024-05-10.pdf)
+</br></br>
 ![Schematic_RFIDBalanceKeeper_2024-05-10](https://github.com/CaTaNa52/RFID-BalanceKeeper/assets/168989951/588e7339-7b61-42f5-b117-ef88359bfe0b)
 
