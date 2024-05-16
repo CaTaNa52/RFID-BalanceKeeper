@@ -2,10 +2,25 @@
 
 RFID-BalanceKeeper is an project for managing balances on RFID cards. This project provides a simple and effective way to use RFID cards to load funds with money and pay at designated locations.
 
-## Maintainer
-**[Habib Kilic](https://github.com/CaTaNa52)** - habibkilic@hotmail.de \
-**[Yusuf Türkyilmaz](https://github.com/Yusuf-Tuerkyilmaz)** - yusuf_tuerkyilmaz@hotmail.de \
-**[Bilal Aydemir](https://github.com/bayd16)** - bilalaydemir@outlook.de
+## Maintainer ✨
+
+Thanks goes to these wonderful people ❤:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/CaTaNa52"><img src="https://avatars.githubusercontent.com/u/168981162?v=4?s=70" width="70px;" alt="Habib Kilic"/><br /><sub><b>Habib Kilic</b></sub></a><br /> </td>
+      <td align="center"><a href="https://github.com/Yusuf-Tuerkyilmaz"><img src="https://avatars.githubusercontent.com/u/168989951?v=4?s=70" width="70px;" alt="Yusuf Türkyilmaz"/><br /><sub><b>Yusuf Türkyilmaz</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/bayd16"><img src="https://avatars.githubusercontent.com/u/169069965?v=4?s=70" width="70px;" alt="Bilal Aydemir"/><br /><sub><b>Bilal Aydemir</b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Hardware - Building instructions
 [Click here](https://github.com/CaTaNa52/RFID-BalanceKeeper/blob/main/Documentation/building%20instructions.md)
