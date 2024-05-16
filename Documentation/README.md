@@ -81,7 +81,7 @@ The necessary libraries can be downloaded here -> [Install Libraries](https://gi
 The code required to start the device can now be copied into a new sketch. Once the Arduino is connected and the correct port is selected, the sketch can be started. \
 [Install Source Code for Arduino](https://github.com/CaTaNa52/RFID-BalanceKeeper/tree/main/Software/RFID-BalanceKeeper-code.ino)
 
-5. The code should now be deployed on the Arduino and it can be used. \
+5. The code should now be deployed on the Arduino and it can be used.
 
 ## Usage
 A brief guide on how to use the project and its features. \
