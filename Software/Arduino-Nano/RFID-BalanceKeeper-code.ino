@@ -11,14 +11,16 @@
 LiquidCrystal_I2C lcd(0x27, 20,4);
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
+int i=2;
+
 const byte rows[4] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
 const byte cols[4] = {6, 7, 8, 9}; //connect to the column pinouts of the keypad 
  
 char keys[4][4] = { //create 2D arry for keys
-  {'D', 'C', 'B', 'A'},
-  {'#', '9', '6', '3'},
-  {'0', '8', '5', '2'},
-  {'*', '7', '4', '1'},
+  {'1', '2', '3', 'A'},
+  {'4', '5', '6', 'B'},
+  {'7', '8', '9', 'C'},
+  {'*', '0', '#', 'D'},
 };
 Keypad mykeypad = Keypad(makeKeymap(keys), rows, cols, 4, 4);
 
@@ -48,21 +50,21 @@ void clearSecondRow() {
 }
 
 
- 
+
 void loop() {
   /* 
   TOUCHPAD
   */
   char myKey = mykeypad.getKey(); //get key and put in to the variable
 
-  if (myKey) { //check condition
-    lcd.setCursor(2,1);
+  if (myKey) {
+    lcd.setCursor(i,1);
     lcd.print(String(myKey) + ",-");
-    lcd.setCursor(2,1);
+    i = i+1;
   }
 
   /* 
-  RFID 
+  RFID
   When the RFID card has been inserted, the screen is reset and displays the new UID.  
   */
   if ( ! mfrc522.PICC_IsNewCardPresent()) {
@@ -82,6 +84,7 @@ void loop() {
     lcd.print(mfrc522.uid.uidByte[i], HEX);
   }
   lcd.setCursor(0,0);
+  i = 2;
   
   mfrc522.PICC_HaltA(); // Halt PICC
 }
