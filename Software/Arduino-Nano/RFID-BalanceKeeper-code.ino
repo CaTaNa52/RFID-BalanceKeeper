@@ -11,7 +11,7 @@
 LiquidCrystal_I2C lcd(0x27, 20,4);
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-int i=2;
+int i=2; // for iteration over second row of the lcd display starts from 2
 
 const byte rows[4] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
 const byte cols[4] = {6, 7, 8, 9}; //connect to the column pinouts of the keypad 
