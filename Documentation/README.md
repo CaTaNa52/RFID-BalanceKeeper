@@ -75,11 +75,11 @@ The Arduino homepage is suitable for this -> [Install Arduino IDE](https://www.a
 
 3. Download and import the necessary libraries \
 The various components such as the keypad or the rfid reader etc. require libraries, which must be downloaded and then imported into Arduino IDE. 
-The necessary libraries can be downloaded here -> [Install Libraries](https://github.com/CaTaNa52/RFID-BalanceKeeper/tree/main/Software/Libraries/)
+The necessary libraries can be downloaded here -> [Install Libraries](https://github.com/CaTaNa52/RFID-BalanceKeeper/tree/main/Software/Arduino-Nano/Libraries/)
 
 4. Download and execute the source code \
 The code required to start the device can now be copied into a new sketch. Once the Arduino is connected and the correct port is selected, the sketch can be started. \
-[Install Source Code for Arduino](https://github.com/CaTaNa52/RFID-BalanceKeeper/tree/main/Software/RFID-BalanceKeeper-code.ino)
+[Install Source Code for Arduino](https://github.com/CaTaNa52/RFID-BalanceKeeper/tree/main/Software/Arduino-Nano/RFID-BalanceKeeper-code.ino)
 
 5. The code should now be deployed on the Arduino and it can be used.
 
