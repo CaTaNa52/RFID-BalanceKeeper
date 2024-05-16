@@ -6,8 +6,7 @@ Welcome to the official documentation for the RFID-BalanceKeeper project!
 
 - [Description](#description)
 - [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
+- [Tutorial](#tutorial)
 - [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
 - [Contact](#contact)
@@ -63,14 +62,25 @@ List of hardware components -> [Click here](https://github.com/CaTaNa52/RFID-Bal
 - An appropriate acoustic signal MUST be emitted upon successful loading or unloading of credit.
 - The terminals MUST be implemented with an Arduino.
 
+## Tutorial
+Instructions for configuring the project and its components. 
+Before you can start the project, you have to prepare a few things in advance. 
+First of all, the hardware parts must be firmly installed according to the instructions. 
+Then carry out the following steps one after the other:
 
-## Installation
-Step-by-step guide for installing the project and all necessary components. \
-[Building instructions](./building%20instructions)
+1. Install the development environment \
+As we are using an Arduino Nano in the project, the Arduino IDE should also be used for its programming. 
+There are plenty of installation instructions for this on the Internet. 
+The Arduino homepage is suitable for this -> [Install Arduino IDE](https://www.arduino.cc/en/software)
 
-## Configuration
-Instructions for configuring the project and its components. \
-// TODO
+3. Download and import the necessary libraries \
+The various components such as the keypad or the rfid reader etc. require libraries, which must be downloaded and then imported into Arduino IDE. 
+The necessary libraries can be downloaded here -> (Install Libraries)[TODO]
+
+4. Download and execute the source code \
+The code required to start the device can now be copied into a new sketch. Once the Arduino is connected and the correct port is selected, the sketch can be started. 
+
+5. The code should now be deployed on the Arduino and it can be used. \
 
 ## Usage
 A brief guide on how to use the project and its features. \
