@@ -36,8 +36,8 @@ void setup() {
   lcd.init();
   lcd.init();
   lcd.backlight();
-  lcd.setCursor(2,0);
-  lcd.print("IGH Genclik");
+  lcd.setCursor(0,0);
+  lcd.print("IGH Kermes 2024");
   lcd.setCursor(2,1);
 }
 
