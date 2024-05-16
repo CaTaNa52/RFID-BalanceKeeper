@@ -24,8 +24,10 @@ char keys[4][4] = { //create 2D arry for keys
 };
 Keypad mykeypad = Keypad(makeKeymap(keys), rows, cols, 4, 4);
 
+bool isFirstInput = true; // Variable to track first input
+String inputString = ""; // Variable to store the input string
 
-
+/*********************************************************************************************************************************/
 void setup() {
   Serial.begin(9600); //enable serial monitor
 
@@ -41,26 +43,25 @@ void setup() {
   lcd.setCursor(2,1);
 }
 
-
-
-void clearSecondRow() {
-  lcd.setCursor(0, 1); // Set cursor to the beginning of the second row
-  lcd.print("                    "); // Print 20 spaces to clear the row (20x4 display)
-  lcd.setCursor(0, 1); // Set cursor back to the beginning of the second row
-}
-
-
-
+/*********************************************************************************************************************************/
 void loop() {
-  /* 
-  TOUCHPAD
-  */
   char myKey = mykeypad.getKey(); //get key and put in to the variable
 
   if (myKey) {
-    lcd.setCursor(i,1);
+    if (isFirstInput) { // Check if it's the first input
+      clearSecondRow(); // Clear the second row for the first input
+      isFirstInput = false; // Set isFirstInput to false after the first input
+    }
+    if (myKey == '#') {
+      writeCredit(inputString); // Pass the input string to writeCredit() function
+      inputString = ""; // Clear the input string
+      isFirstInput = true; // Reset isFirstInput for the next input cycle
+      return; // <== Semikolon am Ende des return-Statements
+    }
+    lcd.setCursor(i, 1);
     lcd.print(String(myKey) + ",-");
-    i = i+1;
+    inputString += myKey; // Add the pressed key to the input string
+    i = i + 1;
   }
 
   /* 
@@ -73,7 +74,7 @@ void loop() {
   if ( ! mfrc522.PICC_ReadCardSerial()) {
     return;
   }
-   // Clear the second row before displaying the RFID data
+  // Clear the second row before displaying the RFID data
   clearSecondRow();
   
   // Print the UID of RFID card
@@ -85,6 +86,41 @@ void loop() {
   }
   lcd.setCursor(0,0);
   i = 2;
+
+  readCredit();
   
   mfrc522.PICC_HaltA(); // Halt PICC
+}
+
+/*********************************************************************************************************************************/
+void clearSecondRow() {
+  lcd.setCursor(0, 1); // Set cursor to the beginning of the second row
+  lcd.print("                    "); // Print 20 spaces to clear the row (20x4 display)
+  lcd.setCursor(0, 1); // Set cursor back to the beginning of the second row
+  i = 2;
+  inputString = "";
+}
+
+/*********************************************************************************************************************************/
+void writeCredit(String input) { // Receive the input string as argument
+  clearSecondRow();
+  Serial.print("Guthaben wird aufgeladen für: ");
+  Serial.println(input);
+  readCredit();
+}
+
+/*********************************************************************************************************************************/
+void readCredit(){
+  clearSecondRow();
+  lcd.setCursor(2,1);
+  lcd.print("Guthaben: xx");
+  Serial.print("Guthaben: xx");
+  delay(2000);
+  clearSecondRow();
+  finishConversation();
+}
+
+void finishConversation() {
+  lcd.setCursor(0,0);
+  lcd.print("IGH Kermes 2024");
 }
