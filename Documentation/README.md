@@ -65,7 +65,7 @@ List of hardware components -> [Click here](https://github.com/CaTaNa52/RFID-Bal
 ## Tutorial
 Instructions for configuring the project and its components. 
 Before you can start the project, you have to prepare a few things in advance. 
-First of all, the hardware parts must be firmly installed according to the instructions. 
+First of all, the hardware parts must be firmly installed according to the instructions. [Building instructions](https://github.com/CaTaNa52/RFID-BalanceKeeper/blob/main/Documentation/building%20instructions.md) \
 Then carry out the following steps one after the other:
 
 1. Install the development environment \
