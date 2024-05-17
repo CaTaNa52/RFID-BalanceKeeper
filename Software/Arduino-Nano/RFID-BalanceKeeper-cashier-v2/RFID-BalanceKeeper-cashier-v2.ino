@@ -51,7 +51,7 @@ void loop() {
     } else if (myKey == 'B') {
       // Prompt the user to enter the amount to add to the credit
       lcd.clear(); // Clear LCD display
-      lcd.print("Enter the amount: ");
+      lcd.print("Aufladen: ");
       while (1) {
         char key = myKeypad.getKey();
         if (key) {
@@ -129,7 +129,7 @@ void updateCreditOnCard(int credit) {
     lcd.clear();
     lcd.print("Afiyet olsun :D");
     lcd.setCursor(0,1);
-    lcd.print(String(newCredit) + ",-");
+    lcd.print("Guthaben: " + String(newCredit) + ",-");
     delay(4000);
     clearDisplay();
   }
