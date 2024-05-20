@@ -30,9 +30,9 @@ Thanks goes to these wonderful people ❤:
 
 
 ## Main Features:
-* Load Credit onto an RFID card (in Progress)
+* Load Credit onto an RFID card (✔️)
 * Withdraw Credit from RFID card (in Progress)
-* Easy Management (in Progress)
+* Easy Management (✔️)
 * Security (in Progress)
 
 ![Usecase](./Documentation/images/RFID-BalanceKeeper_UseCase.jpg)
