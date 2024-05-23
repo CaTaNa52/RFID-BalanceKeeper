@@ -4,8 +4,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-#define RST_PIN A0
-#define SS_PIN 10
+#define RST_PIN         A0
+#define SS_PIN          10
 
 LiquidCrystal_I2C lcd(0x27, 20, 4);  // Create LiquidCrystal_I2C instance
 MFRC522 mfrc522(SS_PIN, RST_PIN);    // Create MFRC522 instance
