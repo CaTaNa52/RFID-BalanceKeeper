@@ -93,8 +93,10 @@ void updateCreditOnCard(int credit) {
   // Authenticate using key A
   byte block = 1;  // Block to write the credit value
   MFRC522::StatusCode status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, block, &key, &(mfrc522.uid));
+  Serial.println(credit);
   if (status != MFRC522::STATUS_OK) {
     printError();
+    Serial.println(credit*-1)
     return;
   }
 
