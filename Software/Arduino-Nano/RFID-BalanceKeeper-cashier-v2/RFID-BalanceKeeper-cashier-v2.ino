@@ -34,6 +34,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   clearDisplay();
+  pinMode(A3, OUTPUT);
 }
 
 void loop() {
@@ -85,6 +86,11 @@ void loop() {
   }
 }
 
+void makeBeep() {
+  //Attention: Delay needs to be longer that duration
+  tone(A3, 2500, 300);  //plays a 2500Hz Sound for 300ms
+  return;
+}
 void updateCreditOnCard(int credit) {
   // Prepare key - all keys are set to FFFFFFFFFFFFh at chip delivery from the factory.
   MFRC522::MIFARE_Key key;
@@ -94,6 +100,7 @@ void updateCreditOnCard(int credit) {
   byte block = 1;  // Block to write the credit value
   MFRC522::StatusCode status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, block, &key, &(mfrc522.uid));
   Serial.println(credit);
+  makeBeep();
   if (status != MFRC522::STATUS_OK) {
     printError();
     Serial.println(credit*-1)
@@ -179,6 +186,9 @@ void printError() {
   lcd.print("Fehler.. Karte??");
   lcd.setCursor(0, 1);
   lcd.print("Ya Sabr..");
+  makeBeep();
+  delay(400);
+  makeBeep();
   delay(3000);
   clearDisplay();
 }
