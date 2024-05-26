@@ -1,3 +1,7 @@
+<!-- ALL-MAINTAINER-BADGE:START - Do not remove or modify this section -->
+[![All Maintainer](https://img.shields.io/badge/maintainer-3-red.svg?style=flat-square)](#maintainer-)
+<!-- ALL-MAINTAINER-BADGE:END -->
+
 # <img src="./Documentation/images/RFID-BalanceKeeper_Logo.jpg" width="50" style="vertical-align: middle;"> [RFID-BalanceKeeper](https://catana52.github.io/RFID-BalanceKeeper/)
 
 RFID-BalanceKeeper is an project for managing balances on RFID cards. This project provides a simple and effective way to use RFID cards to load funds with money and pay at designated locations.
@@ -6,7 +10,7 @@ RFID-BalanceKeeper is an project for managing balances on RFID cards. This proje
 
 Thanks goes to these wonderful people ❤:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-MAINTAINER-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
@@ -20,7 +24,7 @@ Thanks goes to these wonderful people ❤:
 </table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- MAINTAINER:END -->
 
 ## Hardware - Building instructions
 [Click here](https://github.com/CaTaNa52/RFID-BalanceKeeper/blob/main/Documentation/building%20instructions.md)
